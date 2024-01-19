@@ -1,0 +1,20 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "chat-app",
+    "chat-server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=chat-app",
+    "start": "npm run start --workspace=chat-server",
+    "dev:server": "npm run build && npm run start --workspace=chat-server",
+    "dev:app": "npm run dev --workspace=chat-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
